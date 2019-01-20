@@ -1,0 +1,30 @@
+data;
+
+set Banks := 0 1 2  ;
+set reference := 0 ;
+
+
+param:   externalAssets :=
+  0    0         
+  1    1         
+  2    0 ;        
+
+ 
+param  alpha := 0.6;
+
+param  betta := 0.6;
+
+param liability (tr):  	0   1  2    :=
+            	   0		  0   1   0   
+            	   1		  0   0   0   
+            	   2    	2   0   0    ;
+
+param CDS_contract :=
+
+ [*,*,0]:  0  1  2     :=
+        0  0  0  0     
+        1  0  0  1     
+        2  0  0  0     ;
+        
+
+ 
